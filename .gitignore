@@ -1,2 +1,3 @@
-data_set/
+**/data_set
 **/.ipynb_checkpoints
+**/mnist
