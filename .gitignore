@@ -1,3 +1,4 @@
 **/data_set
 **/.ipynb_checkpoints
 **/mnist
+*.pkl
