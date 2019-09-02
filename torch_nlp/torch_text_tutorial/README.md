@@ -24,11 +24,11 @@ https://github.com/atnlp/torchtext-summary
 
 &nbsp;&nbsp;&nbsp;&nbsp;代码中在数据集中使用预训练词向量部分已注释为markdown格式，如下所示，若要使用预训练的词向量，例如glove开源的预训练词向量，需要在当前目录下创建mycache文件夹作为cache目录，并指定预训练词向量文件所在位置。glove词向量下载可参考此链接：https://pan.baidu.com/s/1i5XmTA9
 
-    ###  通过预训练的词向量来构建词表的方式示例，以glove.6B.300d词向量为例
+    ###  通过预训练的词向量来构建词表的方式示例，以glove.6B.100d词向量为例
     cache = 'mycache'
     if not os.path.exists(cache):
         os.mkdir(cache)
-    vectors = Vectors(name='/Users/wyw/Documents/vectors/glove/glove.6B.300d.txt', cache=cache)
+    vectors = Vectors(name='/Users/wyw/Documents/vectors/glove/glove.6B.100d.txt', cache=cache)
     # 指定 Vector 缺失值的初始化方式，没有命中的token的初始化方式
     vectors.unk_init = init.xavier_uniform_ 
     TEXT.build_vocab(train, min_freq=5, vectors=vectors)
