@@ -3,3 +3,4 @@
 **/mnist
 *.pkl
 **/mycache
+**/data
